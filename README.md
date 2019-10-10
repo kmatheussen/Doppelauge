@@ -17,7 +17,7 @@ All code should be thoroughly tested.
 
 ScalaDoc
 ========
-http://sun-opsys.github.io/Doppelauge/
+http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.apidoc.package
 
 Play 2.5.x
 =====================

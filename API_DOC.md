@@ -18,7 +18,7 @@ This API-Doc does the following validation checks:
 
 ScalaDoc
 ========
-http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.apidoc.package
+http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.apidoc.package
 
 
 QUICK START

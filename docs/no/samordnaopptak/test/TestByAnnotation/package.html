@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="no">no</a>.<a href="../../package.html" class="extype" name="no.samordnaopptak">samordnaopptak</a>.<a href="../package.html" class="extype" name="no.samordnaopptak.test">test</a></p>
         <h1>TestByAnnotation</h1><span class="permalink">
       <a href="../../../../index.html#no.samordnaopptak.test.TestByAnnotation.package" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -79,7 +79,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#no.samordnaopptak.test.TestByAnnotation.package@TestextendsAnnotationwithAnnotationwithClassfileAnnotation" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -103,15 +103,13 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#no.samordnaopptak.test.TestByAnnotation.package@TestObject" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Do unit testing by annotation.</p><div class="fullcomment"><div class="comment cmt"><p>Do unit testing by annotation. These annotations also function as documentation.
 </p></div><dl class="attributes block"> <div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="cmt">// Production code:</span>
-
 <span class="kw">import</span> no.samordnaopptak.TestByAnnotation.Test
-
 <span class="kw">object</span> StringModifier{
   @Test(code=<span class="lit">""</span><span class="lit">"
      self.appendUnderscore("</span>a<span class="lit">")  =/= "</span>a<span class="lit">"
@@ -121,13 +119,9 @@
   <span class="kw">private</span> <span class="kw">def</span> appendUnderscore(input: <span class="std">String</span>): <span class="std">String</span> =
     input+<span class="lit">"_"</span>
 }
-
-
 <span class="cmt">// Test code:</span>
-
 <span class="kw">import</span> org.specs2.mutable._
 <span class="kw">import</span> no.samordnaopptak.TestByAnnotation
-
 <span class="kw">class</span> TestByAnnotationSpec <span class="kw">extends</span> Specification {
   <span class="lit">"TestByAnnotation"</span> should {
     <span class="lit">"Test by annotation the 'StringModifier' object"</span> in {
@@ -135,8 +129,7 @@
     }
   }
 }</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p>Almost all source files in <a href="https://github.com/sun-opsys/doppelauge/tree/master/app/no/samordnaopptak" target="_blank">https://github.com/sun-opsys/doppelauge/tree/master/app/no/samordnaopptak</a> uses TestByAnnotation for unit tests
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p>Almost all source files in <a href="https://github.com/sun-opsys/doppelauge/tree/master/app/no/samordnaopptak" target="_blank">https://github.com/sun-opsys/doppelauge/tree/master/app/no/samordnaopptak</a> uses TestByAnnotation for unit tests</p></span></dd></dl></div>
     </li></ol>
             </div>
 

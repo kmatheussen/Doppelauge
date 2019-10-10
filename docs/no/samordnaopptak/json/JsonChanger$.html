@@ -28,13 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../lib/object_big.png" />
+        <img alt="Object" src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="no">no</a>.<a href="../package.html" class="extype" name="no.samordnaopptak">samordnaopptak</a>.<a href="package.html" class="extype" name="no.samordnaopptak.json">json</a></p>
         <h1>JsonChanger</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="no.samordnaopptak.json">package json</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -56,7 +56,7 @@ When changing a json value with JsonChanger, it also pattern matches the <b>json
 should make bugs appear earlier than they would have been othervice.
 (You might argue that it would be better to first validate the json against a schema, but this way you get validation for free, plus that the validation schema maintains itself automatically.)</p><p>There are several custom changers such as <a href="JsonChanger$$___identity$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___identity">___identity</a>, <a href="JsonChanger$$Replace.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Replace">Replace</a>, <a href="JsonChanger$$Func.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Func">Func</a>, <a href="JsonChanger$$Map.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Map">Map</a>, <a href="JsonChanger$$MapChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MapChanger">MapChanger</a>, etc. See documentation below for examples.
 Custom changers can also be created from the outside by implementing the <a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a> trait.</p><p>The pattern matcher in JsonChanger checks that: a) a json value doesn't change type (unless we tell it to),
-b) we don't add or remove fields to objects (unless we tell it to), c) we don't add or remove values to arrays (unless we tell it to).</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/sun-opsys/Doppelauge/tree/master/app/no/samordnaopptak/JsonChanger.scala" target="_blank">JsonChanger.scala</a></dd><div class="block">Example:
+b) we don't add or remove fields to objects (unless we tell it to), c) we don't add or remove values to arrays (unless we tell it to).</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/sun-opsys/Doppelauge/tree/master/home/kjetil/Doppelauge/app/no/samordnaopptak/JsonChanger.scala" target="_blank">JsonChanger.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">val</span> json = J.obj(
   <span class="lit">"aaa"</span> -&gt; J.obj(
     <span class="lit">"a1"</span> -&gt; <span class="num">60</span>,
@@ -64,7 +64,6 @@ b) we don't add or remove fields to objects (unless we tell it to), c) we don't 
   ),
   <span class="lit">"bbb"</span> -&gt; <span class="num">80</span>
 )
-
 <span class="cmt">// Add 5 to the value of "aaa.a1" by using JsonChanger:</span>
 JsonChanger(
   json,
@@ -76,9 +75,7 @@ JsonChanger(
     <span class="lit">"bbb"</span> -&gt; ___identity.number
   )
 )
-
 <span class="cmt">// Add 5 to the value of "aaa.a1" manually:</span>
-
 json - <span class="lit">"aaa"</span> ++ J.obj(
   <span class="lit">"aaa"</span> -&gt; (
     json(<span class="lit">"aaa"</span>) - <span class="lit">"a1"</span> ++ J.obj(
@@ -86,8 +83,7 @@ json - <span class="lit">"aaa"</span> ++ J.obj(
     )
   )
 )</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala" target="_blank">https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala</a> for more examples
-</p></span></dd></dl><div class="toggleContainer block">
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala" target="_blank">https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala</a> for more examples</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -100,7 +96,7 @@ json - <span class="lit">"aaa"</span> ++ J.obj(
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -113,9 +109,8 @@ json - <span class="lit">"aaa"</span> ++ J.obj(
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -142,7 +137,7 @@ json - <span class="lit">"aaa"</span> ++ J.obj(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@ChangeThisFieldextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Change the name and content of a field
@@ -166,8 +161,7 @@ J.obj(<span class="lit">"bbb"</span> -&gt; <span class="num">50</span>)</pre><p>
     )
   ),
   J.obj()
-)</pre><p>Othervice, an exception is thrown if the field doesn't exist. If you want to create a new field no matter what, a combination of <a href="JsonChanger$$Maybe.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Maybe">JsonChanger.Maybe</a>(<a href="JsonChanger$$___removeThisField$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeThisField">___removeThisField</a>) and <a href="JsonChanger$$NewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.NewField">NewField</a> can be used instead.
-</p></li></ol>
+)</pre><p>Othervice, an exception is thrown if the field doesn't exist. If you want to create a new field no matter what, a combination of <a href="JsonChanger$$Maybe.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Maybe">JsonChanger.Maybe</a>(<a href="JsonChanger$$___removeThisField$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeThisField">___removeThisField</a>) and <a href="JsonChanger$$NewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.NewField">NewField</a> can be used instead.</p></li></ol>
             </div></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.Changer" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ChangerextendsJValue"></a>
@@ -182,23 +176,20 @@ J.obj(<span class="lit">"bbb"</span> -&gt; <span class="num">50</span>)</pre><p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@ChangerextendsJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Interface for custom changers.</p><div class="fullcomment"><div class="comment cmt"><p>Interface for custom changers.
 </p></div><dl class="attributes block"> <div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">object</span> Add1 <span class="kw">extends</span> Changer {
   <span class="kw">override</span> <span class="kw">def</span> pp() = <span class="lit">"Add1"</span>
-
   <span class="kw">def</span> transform(json: JValue, path: <span class="std">String</span>, allow_mismatched_types: <span class="std">Boolean</span>) = {
     Expects.Number.validate(json, path)
     JsonChanger.apply(json, json + <span class="num">1</span>, path, allow_mismatched_types)
   }
 }
-
 JsonChanger(<span class="num">50</span>, Add1) === J(<span class="num">51</span>)</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$MaybeChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MaybeChanger">MaybeChanger</a>
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$MaybeChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MaybeChanger">MaybeChanger</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.ForceNewField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ForceNewFieldextendsJValuewithProductwithSerializable"></a>
       <a id="ForceNewField:ForceNewField"></a>
@@ -212,7 +203,7 @@ JsonChanger(<span class="num">50</span>, Add1) === J(<span class="num">51</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@ForceNewFieldextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Same as <a href="JsonChanger$$NewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.NewField">NewField</a>, but does not throw exception if the field already exists.</p><div class="fullcomment"><div class="comment cmt"><p>Same as <a href="JsonChanger$$NewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.NewField">NewField</a>, but does not throw exception if the field already exists. The argument is also a changer and not a value.
@@ -247,7 +238,7 @@ If the key doesn't exist, the input value to the changer will be an instance of 
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@FuncextendsJsonChanger.ChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Apply a custom function on a json value.</p><div class="fullcomment"><div class="comment cmt"><p>Apply a custom function on a json value.</p><p>The <i>Func</i> object has helper objects to create new Func changers less verbosely.
@@ -277,7 +268,7 @@ J.obj(<span class="lit">"aaa"</span> -&gt; <span class="lit">"30"</span>)</pre><
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@InputOutputTypeTransformer[T,R]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -294,7 +285,7 @@ J.obj(<span class="lit">"aaa"</span> -&gt; <span class="lit">"30"</span>)</pre><
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@InputTypeTransformer[R]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -311,7 +302,7 @@ J.obj(<span class="lit">"aaa"</span> -&gt; <span class="lit">"30"</span>)</pre><
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@InsertValueextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Insert new value into array</p><div class="fullcomment"><div class="comment cmt"><p>Insert new value into array</p></div><dl class="attributes block"> <div class="block">Example:
@@ -331,8 +322,7 @@ J.arr(
   <span class="num">90</span>,
   <span class="num">3</span>
 )</pre></li></ol>
-            </div><dt>Note</dt><dd><span class="cmt"><p>see also <a href="JsonChanger$$___removeValue$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeValue">___removeValue</a>
-</p></span></dd></dl></div>
+            </div><dt>Note</dt><dd><span class="cmt"><p>see also <a href="JsonChanger$$___removeValue$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeValue">___removeValue</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.Map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MapextendsJsonChanger.ChangerwithProductwithSerializable"></a>
       <a id="Map:Map"></a>
@@ -346,7 +336,7 @@ J.arr(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@MapextendsJsonChanger.ChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Map a function on array
@@ -357,8 +347,7 @@ J.arr(
   <span class="std">Map</span>.number.number(_ + <span class="num">2</span>)
 ) ===
 J.arr(<span class="num">4</span>,<span class="num">5</span>)</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$InputOutputTypeTransformer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InputOutputTypeTransformer">InputOutputTypeTransformer</a>
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$InputOutputTypeTransformer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InputOutputTypeTransformer">InputOutputTypeTransformer</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.MapChanger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MapChangerextendsJsonChanger.ChangerwithProductwithSerializable"></a>
       <a id="MapChanger:MapChanger"></a>
@@ -372,7 +361,7 @@ J.arr(<span class="num">4</span>,<span class="num">5</span>)</pre></li></ol>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@MapChangerextendsJsonChanger.ChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Map <a href="#apply(json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean):no.samordnaopptak.json.JValue" class="extmbr" name="no.samordnaopptak.json.JsonChanger#apply">JsonChanger.apply</a> on array
@@ -397,7 +386,7 @@ J.arr(<span class="num">2</span>,<span class="num">9</span>)</pre></li></ol>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@MaybeextendsJsonChanger.MaybeChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Apply a change to a json value if the json value is defined.</p><div class="fullcomment"><div class="comment cmt"><p>Apply a change to a json value if the json value is defined.
@@ -413,7 +402,6 @@ J.arr(<span class="num">2</span>,<span class="num">9</span>)</pre></li></ol>
   J.obj(
     <span class="lit">"aaa"</span> -&gt; <span class="num">50</span>
   )
-
   JsonChanger(
     J.obj(),
     J.obj(
@@ -421,21 +409,18 @@ J.arr(<span class="num">2</span>,<span class="num">9</span>)</pre></li></ol>
     )
   ) ===
   J.obj()
-
   JsonChanger(
     <span class="kw">null</span>,
     Maybe(Func.number.number(_ + <span class="num">1</span>))
   ) ===
   JNull
-
   JsonChanger(
     <span class="num">90</span>,
     Maybe(Func.number.number(_ + <span class="num">1</span>))
   ) ===
   <span class="num">91</span>
 )</pre></li></ol>
-            </div><dt>Note</dt><dd><span class="cmt"><p>Must be used if it is uncertain whether a field is present in an object.
-</p></span></dd></dl></div>
+            </div><dt>Note</dt><dd><span class="cmt"><p>Must be used if it is uncertain whether a field is present in an object.</p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.MaybeChanger" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="MaybeChangerextendsJsonChanger.Changer"></a>
       <a id="MaybeChanger:MaybeChanger"></a>
@@ -449,7 +434,7 @@ J.arr(<span class="num">2</span>,<span class="num">9</span>)</pre></li></ol>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@MaybeChangerextendsJsonChanger.Changer" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Interface for custom changers.</p><div class="fullcomment"><div class="comment cmt"><p>Interface for custom changers.
@@ -458,15 +443,13 @@ J.arr(<span class="num">2</span>,<span class="num">9</span>)</pre></li></ol>
 This is the implementation of the <a href="JsonChanger$$Maybe.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Maybe">JsonChanger.Maybe</a> changer:</p><pre><span class="kw">case</span> <span class="kw">class</span> Maybe(changer: <span class="std">Any</span>) <span class="kw">extends</span> MaybeChanger {
   <span class="kw">val</span> j_changer = J(changer)
   <span class="kw">override</span> <span class="kw">def</span> pp() = <span class="lit">"Maybe("</span>+j_changer.pp()+<span class="lit">")"</span>
-
   <span class="kw">def</span> maybeTransform(json: JValue, path: <span class="std">String</span>, allow_mismatched_types: <span class="std">Boolean</span>): <span class="std">Option</span>[<span class="std">Any</span>] =
     <span class="kw">if</span> (json.isDefined)
       <span class="std">Some</span>(JsonChanger.apply(json, changer, path, allow_mismatched_types))
     <span class="kw">else</span>
       <span class="std">None</span>
 }</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a>
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.NewField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="NewFieldextendsJValuewithProductwithSerializable"></a>
       <a id="NewField:NewField"></a>
@@ -480,7 +463,7 @@ This is the implementation of the <a href="JsonChanger$$Maybe.html" class="extyp
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@NewFieldextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Add new field to object.</p><div class="fullcomment"><div class="comment cmt"><p>Add new field to object.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -497,8 +480,7 @@ J.obj(
   <span class="lit">"aaa"</span> -&gt; <span class="num">90</span>,
   <span class="lit">"bbb"</span> -&gt; <span class="num">100</span>
 )</pre></li></ol>
-            </div><dt>Note</dt><dd><span class="cmt"><p>If the field may already exist in the object, use <a href="JsonChanger$$ForceNewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.ForceNewField">ForceNewField</a> instead.
-</p></span></dd></dl></div>
+            </div><dt>Note</dt><dd><span class="cmt"><p>If the field may already exist in the object, use <a href="JsonChanger$$ForceNewField.html" class="extype" name="no.samordnaopptak.json.JsonChanger.ForceNewField">ForceNewField</a> instead.</p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.Or" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="OrextendsJsonChanger.MaybeChangerwithProductwithSerializable"></a>
       <a id="Or:Or"></a>
@@ -512,7 +494,7 @@ J.obj(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@OrextendsJsonChanger.MaybeChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Trying several <a href="JsonChanger$$MaybeChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MaybeChanger">MaybeChanger</a>s <a href="JsonChanger$$MaybeChanger.html#maybeTransform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Option[Any]" class="extmbr" name="no.samordnaopptak.json.JsonChanger.MaybeChanger#maybeTransform">MaybeChanger.maybeTransform</a> methods, and returns the result of the first one not returning None.</p><div class="fullcomment"><div class="comment cmt"><p>Trying several <a href="JsonChanger$$MaybeChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MaybeChanger">MaybeChanger</a>s <a href="JsonChanger$$MaybeChanger.html#maybeTransform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Option[Any]" class="extmbr" name="no.samordnaopptak.json.JsonChanger.MaybeChanger#maybeTransform">MaybeChanger.maybeTransform</a> methods, and returns the result of the first one not returning None.</p><p>An exception is thrown if neither of the changers return a value.
@@ -560,7 +542,7 @@ J.obj(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@RemoveThisFieldextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">    See <a href="JsonChanger$$___removeThisField$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeThisField">___removeThisField</a>
@@ -578,7 +560,7 @@ J.obj(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@RemoveValueextendsJValuewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">    See <a href="JsonChanger$$___removeValue$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___removeValue">___removeValue</a>
@@ -596,7 +578,7 @@ J.obj(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@ReplaceextendsJsonChanger.MaybeChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Replaces the input with a specified output if the input matches.</p><div class="fullcomment"><div class="comment cmt"><p>Replaces the input with a specified output if the input matches.
@@ -606,7 +588,6 @@ J.obj(
   J.arr(Replace(<span class="num">3</span>, <span class="num">5</span>), Replace(<span class="num">3</span>, <span class="num">5</span>))
 ) ===
 J.arr(<span class="num">2</span>, <span class="num">5</span>)
-
 JsonMatcher.matchJson(
   JsonChanger(
     <span class="num">30</span>,
@@ -614,8 +595,7 @@ JsonMatcher.matchJson(
   ),
   J(<span class="num">120</span>)
 )</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonMatcher$.html" class="extype" name="no.samordnaopptak.json.JsonMatcher">JsonMatcher</a>
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonMatcher$.html" class="extype" name="no.samordnaopptak.json.JsonMatcher">JsonMatcher</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger.Type" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="TypeextendsAnyRef"></a>
       <a id="Type:Type"></a>
@@ -629,7 +609,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@TypeextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -646,7 +626,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@TypeChangeextendsJsonChanger.ChangerwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Must be used if the output type is different from the input type
@@ -656,8 +636,7 @@ JsonMatcher.matchJson(
   <span class="num">50</span>,
   TypeChange.number.string(<span class="lit">"aiai"</span>) <span class="cmt">// <- input type is number, output type is string</span>
 ) === JString(<span class="lit">"aiai"</span>)</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$InputOutputTypeTransformer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InputOutputTypeTransformer">InputOutputTypeTransformer</a>
-</p></span></dd></dl></div>
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="JsonChanger$$InputOutputTypeTransformer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InputOutputTypeTransformer">InputOutputTypeTransformer</a></p></span></dd></dl></div>
     </li></ol>
             </div>
 
@@ -678,7 +657,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -695,7 +674,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -712,7 +691,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -729,7 +708,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@Expects" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Used in conjunction with <a href="JsonChanger$$TypeChange.html" class="extype" name="no.samordnaopptak.json.JsonChanger.TypeChange">TypeChange</a>, <a href="JsonChanger$$Func.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Func">Func</a>, and <a href="JsonChanger$$Map.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Map">Map</a>
@@ -747,7 +726,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@Func" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -764,7 +743,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@Map" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -781,7 +760,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@TypeChange" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -798,7 +777,7 @@ JsonMatcher.matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@___allowOtherFields:(String,play.api.libs.json.Json.JsValueWrapper)" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Allow other fields in an object than the ones specified in the changer.</p><div class="fullcomment"><div class="comment cmt"><p>Allow other fields in an object than the ones specified in the changer.
@@ -826,7 +805,7 @@ J.obj(<span class="lit">"aaa"</span> -&gt; <span class="num">50</span>)</pre></l
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@___allowOtherValues:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Allow other values in an array than the ones specified in the changer.</p><div class="fullcomment"><div class="comment cmt"><p>Allow other values in an array than the ones specified in the changer.
@@ -853,7 +832,7 @@ J.arr(<span class="num">5</span>)</pre></li></ol>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@___identity" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Identity function changers
@@ -881,7 +860,7 @@ J.arr(<span class="num">5</span>)</pre></li></ol>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@___removeThisField" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Removes a field from an object
@@ -918,7 +897,7 @@ J.obj()</pre><p><a href="JsonChanger$$___removeThisField$.html" class="extype" n
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@___removeValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Remove value from array</p><div class="fullcomment"><div class="comment cmt"><p>Remove value from array</p></div><dl class="attributes block"> <div class="block">Example:
@@ -935,8 +914,7 @@ J.obj()</pre><p><a href="JsonChanger$$___removeThisField$.html" class="extype" n
 J.arr(
   <span class="num">3</span>
 )</pre></li></ol>
-            </div><dt>Note</dt><dd><span class="cmt"><p>see also <a href="JsonChanger$$InsertValue.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InsertValue">InsertValue</a>
-</p></span></dd></dl></div>
+            </div><dt>Note</dt><dd><span class="cmt"><p>see also <a href="JsonChanger$$InsertValue.html" class="extype" name="no.samordnaopptak.json.JsonChanger.InsertValue">InsertValue</a></p></span></dd></dl></div>
     </li><li name="no.samordnaopptak.json.JsonChanger#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply(json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean):no.samordnaopptak.json.JValue"></a>
       <a id="apply(Any,Any,String,Boolean):JValue"></a>
@@ -950,23 +928,17 @@ J.arr(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@apply(json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean):no.samordnaopptak.json.JValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Main function.</p><div class="fullcomment"><div class="comment cmt"><p>Main function.</p></div><dl class="paramcmts block"><dt class="param">json_value</dt><dd class="cmt"><p>the value to change</p></dd><dt class="param">changer</dt><dd class="cmt"><p>the pattern to change against</p></dd><dt class="param">path</dt><dd class="cmt"><p>Prepended to <b>path</b> value in <a href="JsonChangerException.html" class="extype" name="no.samordnaopptak.json.JsonChangerException">JsonChangerException</a> (if thrown).</p></dd><dt class="param">allow_mismatched_types</dt><dd class="cmt"><p>Allow mismatched types. Example:</p><pre><span class="cmt">// This example:</span>
-
 JsonChanger(<span class="num">50</span>, <span class="lit">"hello"</span>, allow_mismatched_types = <span class="kw">true</span>)
-
 <span class="cmt">// ...works. However, this example:</span>
-
 JsonChanger(J.arr(<span class="num">50</span>), J.arr(<span class="lit">"hello"</span>), allow_mismatched_types = <span class="kw">true</span>)
-
 <span class="cmt">// ...will fail independent of the value of 'allow_mismatched_types'.</span>
 <span class="cmt">//</span>
 <span class="cmt">// To allow mismatched types for array or object values, we must do this instead:</span>
-
-JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<span class="lit">"hello"</span>))</pre><p>    The <b>allow_mismatched_types</b> parameter is exposed here since it must be handled manually in <a href="JsonChanger$$Changer.html#transform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Any" class="extmbr" name="no.samordnaopptak.json.JsonChanger.Changer#transform">Changer.transform</a>. In <a href="JsonChanger$$Changer.html#transform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Any" class="extmbr" name="no.samordnaopptak.json.JsonChanger.Changer#transform">Changer.transform</a>, you sometimes want to call <a href="#apply(json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean):no.samordnaopptak.json.JValue" class="extmbr" name="no.samordnaopptak.json.JsonChanger#apply">JsonChanger.apply</a> and then <b>allow_mismatched_types</b> must be forwarded to avoid the changer to fail if the current <a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a> instance (i.e. <b>this</b>) was surrounded with a <a href="JsonChanger$$TypeChange.html" class="extype" name="no.samordnaopptak.json.JsonChanger.TypeChange">TypeChange</a> changer.
-</p></dd></dl></div>
+JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<span class="lit">"hello"</span>))</pre><p>    The <b>allow_mismatched_types</b> parameter is exposed here since it must be handled manually in <a href="JsonChanger$$Changer.html#transform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Any" class="extmbr" name="no.samordnaopptak.json.JsonChanger.Changer#transform">Changer.transform</a>. In <a href="JsonChanger$$Changer.html#transform(json:no.samordnaopptak.json.JValue,path:String,allow_mismatched_types:Boolean):Any" class="extmbr" name="no.samordnaopptak.json.JsonChanger.Changer#transform">Changer.transform</a>, you sometimes want to call <a href="#apply(json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean):no.samordnaopptak.json.JValue" class="extmbr" name="no.samordnaopptak.json.JsonChanger#apply">JsonChanger.apply</a> and then <b>allow_mismatched_types</b> must be forwarded to avoid the changer to fail if the current <a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a> instance (i.e. <b>this</b>) was surrounded with a <a href="JsonChanger$$TypeChange.html" class="extype" name="no.samordnaopptak.json.JsonChanger.TypeChange">TypeChange</a> changer.</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -980,7 +952,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -997,7 +969,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1020,7 +992,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -1037,7 +1009,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -1054,7 +1026,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1077,7 +1049,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -1094,7 +1066,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -1111,7 +1083,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -1128,7 +1100,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -1145,7 +1117,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -1162,7 +1134,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -1179,7 +1151,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -1196,7 +1168,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -1213,7 +1185,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1236,7 +1208,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1259,7 +1231,7 @@ JsonChanger(J.arr(<span class="num">50</span>), J.arr(TypeChange.number.string(<
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonChanger$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>

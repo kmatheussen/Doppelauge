@@ -9,7 +9,7 @@ J
 * J keeps track of the fields which are read out of a json object, and can validate automatically that it contained what you expected.
 * JValue has some support dynamic typing. It's not always the simplest option to convert back and forth between json and native types
   (for instance ```J(5) + 9 === J(14)```). See also [JsonMatcher](JSON.md#jsonmatcher) and [JsonChanger](JSON.md#jsonchanger).
-* Scaladoc: [J](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.J$)
+* Scaladoc: [J](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.J$)
 
 
 ```scala
@@ -35,7 +35,7 @@ JsonMatcher
 * Patternmatcher for json values.
 * Several custom matchers.
 * When matching fails, the error messages contain description with full path.
-* ScalaDoc: [JsonMatcher](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonMatcher$)
+* ScalaDoc: [JsonMatcher](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonMatcher$)
 
 
 ```scala
@@ -75,8 +75,8 @@ Change the content of a json value in a safe and descriptive manner.
   
 Firstly, the name is misleading. JsonChanger is not *changing* (i.e mutating) the values. It returns a new value.
 
-The main function, [JsonChanger.apply](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonChanger$@apply%28json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean%29:no.samordnaopptak.json.JValue) takes two arguments: **json_value** and **changer**.
-The **changer** variable has similarities to the **matcher** variable used in [JsonMatcher](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonMatcher$), but while
+The main function, [JsonChanger.apply](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonChanger$@apply%28json_value:Any,changer:Any,path:String,allow_mismatched_types:Boolean%29:no.samordnaopptak.json.JValue) takes two arguments: **json_value** and **changer**.
+The **changer** variable has similarities to the **matcher** variable used in [JsonMatcher](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonMatcher$), but while
 JsonMatcher only returns **true** or **false**, JsonChanger returns a new Json value.
    
 The most important similarity between JsonChanger and JsonMatcher is that they both do pattern matching.
@@ -93,10 +93,10 @@ The pattern matcher in JsonChanger checks that:
 
 When matching fails, the error messages contain description with full path.
 
-There are several custom changers such as *___identity*, *Replace*, *Func*, *Map*, *MapChanger*, etc. See [scala doc](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonChanger$) for examples.
+There are several custom changers such as *___identity*, *Replace*, *Func*, *Map*, *MapChanger*, etc. See [scala doc](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonChanger$) for examples.
 Custom changers can be also be created from the outside by implementing the *Changer* trait.
 
-ScalaDoc: [JsonChanger](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonChanger$)
+ScalaDoc: [JsonChanger](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonChanger$)
 
 Example:
 
@@ -147,5 +147,5 @@ JsonDiff
 ========
 Simple Json Diff algorithm. Can be used to display the difference between two json values. An example function
 for creating HTML table is included.
-* ScalaDoc: [JsonDiff](http://sun-opsys.github.io/Doppelauge/#no.samordnaopptak.json.JsonDiff$)
+* ScalaDoc: [JsonDiff](http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.json.JsonDiff$)
 

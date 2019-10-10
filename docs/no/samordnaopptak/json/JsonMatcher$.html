@@ -28,13 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../lib/object_big.png" />
+        <img alt="Object" src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="no">no</a>.<a href="../package.html" class="extype" name="no.samordnaopptak">samordnaopptak</a>.<a href="package.html" class="extype" name="no.samordnaopptak.json">json</a></p>
         <h1>JsonMatcher</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="no.samordnaopptak.json">package json</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -50,14 +50,11 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p> Patternmatcher for json values. Use the <a href="#matchJson(matcher:Any,json:Any,throwException:Boolean,ignoreArrayOrder:Boolean):Boolean" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#matchJson">matchJson</a> method to match json values.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/sun-opsys/Doppelauge/tree/master/app/no/samordnaopptak/JsonMatcher.scala" target="_blank">JsonMatcher.scala</a></dd><div class="block">Example:
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/sun-opsys/Doppelauge/tree/master/home/kjetil/Doppelauge/app/no/samordnaopptak/JsonMatcher.scala" target="_blank">JsonMatcher.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">package</span> test
-
 <span class="kw">import</span> org.specs2.mutable._
-
 <span class="kw">import</span> no.samordnaopptak.json.J
 <span class="kw">import</span> no.samordnaopptak.json.JsonMatcher._
-
 <span class="kw">class</span> JsonMatcherSpec <span class="kw">extends</span> Specification {
   <span class="lit">"Json matcher"</span> should {
     <span class="lit">"match object with object"</span> in {
@@ -78,10 +75,7 @@
     }
   }
 }</pre></li></ol>
-            </div><dt>Note</dt><dd><span class="cmt"><p>JsonMatcher provides several custom matchers such as <a href="#___anyString:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyString">___anyString</a>, <a href="#___anyNumber:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyNumber">___anyNumber</a>, <a href="JsonMatcher$$RegExp.html" class="extype" name="no.samordnaopptak.json.JsonMatcher.RegExp">RegExp</a>, <a href="JsonMatcher$$Custom.html" class="extype" name="no.samordnaopptak.json.JsonMatcher.Custom">Custom</a>, etc. All of these matchers have examples.
-</p></span>, <span class="cmt"><p>The matcher and json values do not have to be <a href="JObject.html" class="extype" name="no.samordnaopptak.json.JObject">JObject</a> valuess (the result of calling 'J.obj'). <a href="#matchJson(matcher:Any,json:Any,throwException:Boolean,ignoreArrayOrder:Boolean):Boolean" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#matchJson">matchJson</a> understands a number of different types such as <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>, JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, Boolean, etc.
-</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/sun-opsys/doppelauge/blob/master/test/JsonMatcherSpec.scala" target="_blank">https://github.com/sun-opsys/doppelauge/blob/master/test/JsonMatcherSpec.scala</a> for more examples
-</p></span></dd></dl><div class="toggleContainer block">
+            </div><dt>Note</dt><dd><span class="cmt"><p>JsonMatcher provides several custom matchers such as <a href="#___anyString:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyString">___anyString</a>, <a href="#___anyNumber:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyNumber">___anyNumber</a>, <a href="JsonMatcher$$RegExp.html" class="extype" name="no.samordnaopptak.json.JsonMatcher.RegExp">RegExp</a>, <a href="JsonMatcher$$Custom.html" class="extype" name="no.samordnaopptak.json.JsonMatcher.Custom">Custom</a>, etc. All of these matchers have examples.</p></span>, <span class="cmt"><p>The matcher and json values do not have to be <a href="JObject.html" class="extype" name="no.samordnaopptak.json.JObject">JObject</a> valuess (the result of calling 'J.obj'). <a href="#matchJson(matcher:Any,json:Any,throwException:Boolean,ignoreArrayOrder:Boolean):Boolean" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#matchJson">matchJson</a> understands a number of different types such as <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>, JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, Boolean, etc.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/sun-opsys/doppelauge/blob/master/test/JsonMatcherSpec.scala" target="_blank">https://github.com/sun-opsys/doppelauge/blob/master/test/JsonMatcherSpec.scala</a> for more examples</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -94,7 +88,7 @@
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -107,9 +101,8 @@
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -136,7 +129,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@AndextendsJsStringwithJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -153,7 +146,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@CustomextendsJsStringwithJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -170,7 +163,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@JsonMatcherExceptionextendsException" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -187,7 +180,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@MaybeextendsJsStringwithJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -204,7 +197,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@OrextendsJsStringwithJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -221,7 +214,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@RegExpextendsJsStringwithJValue" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -245,7 +238,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -262,7 +255,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -279,7 +272,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -296,7 +289,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@And(andMatchers:Any*):no.samordnaopptak.json.JsonMatcher.And" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Creates an And matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates an And matcher.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -326,11 +319,10 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@Custom(func:no.samordnaopptak.json.JValue=&gt;Boolean,name:String):no.samordnaopptak.json.JsonMatcher.Custom" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Creates a custom matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a custom matcher.</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>can be set to help identify what went wrong if matching fails
-</p></dd></dl><dl class="attributes block"> <div class="block">Example:
+      <p class="shortcomment cmt">Creates a custom matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a custom matcher.</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>can be set to help identify what went wrong if matching fails</p></dd></dl><dl class="attributes block"> <div class="block">Example:
                <ol><li class="cmt"><p></p><pre>matchJson(
   Custom(_ <span class="kw">=&gt;</span> <span class="kw">true</span>),
   JsNull
@@ -339,7 +331,6 @@ matchJson(
   Custom(_ <span class="kw">=&gt;</span> <span class="kw">false</span>),
   JsNull
 ) should throwA[JsonMatcherException]
-
 matchJson(
   Custom(_.asNumber &gt; <span class="num">0</span>),
   <span class="num">50</span>
@@ -362,7 +353,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@Maybe(maybeMatcher:Any):no.samordnaopptak.json.JsonMatcher.Maybe" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Creates a Maybe matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a Maybe matcher.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -372,7 +363,6 @@ matchJson(
   ),
   J.obj()
 )
-
 matchJson(
   J.obj(
     <span class="lit">"a"</span> -&gt; Maybe(___anyNumber)
@@ -381,7 +371,6 @@ matchJson(
     <span class="lit">"a"</span> -&gt; JNull
   )
 )
-
 matchJson(
   J.obj(
     <span class="lit">"a"</span> -&gt; Maybe(___anyNumber)
@@ -390,7 +379,6 @@ matchJson(
     <span class="lit">"a"</span> -&gt; <span class="std">None</span>
   )
 )
-
 matchJson(
   J.obj(
     <span class="lit">"a"</span> -&gt; Maybe(___anyNumber)
@@ -421,7 +409,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@Or(orMatchers:Any*):no.samordnaopptak.json.JsonMatcher.Or" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Creates an Or matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates an Or matcher.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -451,7 +439,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@RegExp(pattern:String):no.samordnaopptak.json.JsonMatcher.RegExp" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Creates a RegExp matcher.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a RegExp matcher.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -459,12 +447,10 @@ matchJson(
   J.obj(<span class="lit">"a"</span> -&gt; RegExp(<span class="lit">"b"</span>)),
   J.obj(<span class="lit">"a"</span> -&gt; <span class="lit">"cbh"</span>)
 )
-
 matchJson(
   J.obj(<span class="lit">"a"</span> -&gt; RegExp(<span class="lit">"^b"</span>)),
   J.obj(<span class="lit">"a"</span> -&gt; <span class="lit">"bh"</span>)
 )
-
 matchJson(
   J.obj(<span class="lit">"a"</span> -&gt; RegExp(<span class="lit">"b"</span>)),
   J.obj(<span class="lit">"a"</span> -&gt; <span class="lit">"c"</span>)
@@ -483,7 +469,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___allowOtherFields:(String,play.api.libs.json.Json.JsValueWrapper)" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Allow other fields when matching objects.</p><div class="fullcomment"><div class="comment cmt"><p>Allow other fields when matching objects.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -509,7 +495,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___allowOtherValues:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Allow other values when matching arrays.</p><div class="fullcomment"><div class="comment cmt"><p>Allow other values when matching arrays.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -535,7 +521,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___anyArray:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Matches any array.</p><div class="fullcomment"><div class="comment cmt"><p>Matches any array.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -561,7 +547,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___anyBoolean:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Matches any boolean.</p><div class="fullcomment"><div class="comment cmt"><p>Matches any boolean.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -587,7 +573,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___anyNumber:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Matches any number.</p><div class="fullcomment"><div class="comment cmt"><p>Matches any number.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -613,7 +599,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___anyObject:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Matches any object.</p><div class="fullcomment"><div class="comment cmt"><p>Matches any object.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -639,7 +625,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___anyString:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Matches any string.</p><div class="fullcomment"><div class="comment cmt"><p>Matches any string.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -665,7 +651,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___ignoreOrder:play.api.libs.json.JsString" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Ignore order when matching arrays.</p><div class="fullcomment"><div class="comment cmt"><p>Ignore order when matching arrays.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -691,7 +677,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@___numElements:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Checks that the number of elements in an object or array matches.</p><div class="fullcomment"><div class="comment cmt"><p>Checks that the number of elements in an object or array matches.</p></div><dl class="attributes block"> <div class="block">Example:
@@ -703,7 +689,6 @@ matchJson(
   Json.obj(<span class="lit">"a"</span> -&gt; <span class="num">1</span>, ___numElements -&gt; <span class="num">3</span>),
   Json.obj(<span class="lit">"a"</span> -&gt; <span class="num">1</span>, <span class="lit">"b"</span> -&gt; <span class="num">2</span>, <span class="lit">"c"</span> -&gt; <span class="num">3</span>)
 )
-
 matchJson(
   Json.arr(___numElements, <span class="num">3</span>),
   Json.arr(<span class="lit">"a"</span>,<span class="lit">"b"</span>,<span class="lit">"c"</span>)
@@ -726,7 +711,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -743,7 +728,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -766,7 +751,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -783,7 +768,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -800,7 +785,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -823,7 +808,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -840,7 +825,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -857,7 +842,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -874,17 +859,14 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@matchJson(matcher:Any,json:Any,throwException:Boolean,ignoreArrayOrder:Boolean):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Matches two json values.</p><div class="fullcomment"><div class="comment cmt"><p>Matches two json values.</p></div><dl class="paramcmts block"><dt class="param">matcher</dt><dd class="cmt"><p>This json value can contain special values such as <a href="#___anyString:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyString">___anyString</a> or <a href="#___anyBoolean:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyBoolean">___anyBoolean</a></p><p>The value does not have to be a <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>. 'matchJson' understands a number of different types such as JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, etc.
-</p></dd><dt class="param">json</dt><dd class="cmt"><p>This is the json value we want to check against the pattern of 'matcher'</p><p>The value does not have to be a <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>. 'matchJson' understands a number of different types such as JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, etc.
-</p></dd><dt class="param">throwException</dt><dd class="cmt"><p>If true, a JsonMatcherException exception will be thrown if matching fails.
-</p></dd><dt class="param">ignoreArrayOrder</dt><dd class="cmt"><p>When matching arrays, the order within the arrays will not be checked.</p><p>                        The difference between 'ignoreArrayOrder' and the <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a>
-                        matcher is that 'ignoreArrayOrder' works recursively, while <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a> only works for the currently matched array.
-</p></dd><dt>returns</dt><dd class="cmt"><p>true if the patterns matched, false if not
-</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Using the <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a> matcher will have no effect if 'ignoreArrayOrder' is true.
-</p></span></dd></dl></div>
+      <p class="shortcomment cmt">Matches two json values.</p><div class="fullcomment"><div class="comment cmt"><p>Matches two json values.</p></div><dl class="paramcmts block"><dt class="param">matcher</dt><dd class="cmt"><p>This json value can contain special values such as <a href="#___anyString:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyString">___anyString</a> or <a href="#___anyBoolean:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___anyBoolean">___anyBoolean</a>
+The value does not have to be a <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>. 'matchJson' understands a number of different types such as JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, etc.</p></dd><dt class="param">json</dt><dd class="cmt"><p>This is the json value we want to check against the pattern of 'matcher'
+The value does not have to be a <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>. 'matchJson' understands a number of different types such as JsValue (The play framework version of <a href="JValue.html" class="extype" name="no.samordnaopptak.json.JValue">JValue</a>), Map, String, etc.</p></dd><dt class="param">throwException</dt><dd class="cmt"><p>If true, a JsonMatcherException exception will be thrown if matching fails.</p></dd><dt class="param">ignoreArrayOrder</dt><dd class="cmt"><p>When matching arrays, the order within the arrays will not be checked.
+                        The difference between 'ignoreArrayOrder' and the <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a>
+                        matcher is that 'ignoreArrayOrder' works recursively, while <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a> only works for the currently matched array.</p></dd><dt>returns</dt><dd class="cmt"><p>true if the patterns matched, false if not</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Using the <a href="#___ignoreOrder:play.api.libs.json.JsString" class="extmbr" name="no.samordnaopptak.json.JsonMatcher#___ignoreOrder">___ignoreOrder</a> matcher will have no effect if 'ignoreArrayOrder' is true.</p></span></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -898,7 +880,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -915,7 +897,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -932,7 +914,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -949,7 +931,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -966,7 +948,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -983,7 +965,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@verbose:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Prints out info during json matching to help debugging.</p>
@@ -1000,7 +982,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@very_verbose:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Prints out more info during json matching to help debugging
@@ -1018,7 +1000,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1041,7 +1023,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -1064,7 +1046,7 @@ matchJson(
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#no.samordnaopptak.json.JsonMatcher$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
