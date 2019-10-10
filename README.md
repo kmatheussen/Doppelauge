@@ -17,7 +17,8 @@ All code should be thoroughly tested.
 
 ScalaDoc
 ========
-http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.apidoc.package
+http://users.notam02.no/~kjetism/doppelauge/#no.samordnaopptak.package
+
 
 Play 2.5.x
 =====================
