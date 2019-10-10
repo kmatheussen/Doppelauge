@@ -41,7 +41,7 @@ class JsonMatcherSpec extends Specification {
   * 
   * @note JsonMatcher provides several custom matchers such as [[___anyString]], [[___anyNumber]], [[RegExp]], [[Custom]], etc. All of these matchers have examples.
   * 
-  * @see [[https://github.com/sun-opsys/doppelauge/blob/master/test/JsonMatcherSpec.scala]] for more examples
+  * @see [[https://github.com/kmatheussen/doppelauge/blob/master/test/JsonMatcherSpec.scala]] for more examples
   */
 object JsonMatcher{
 

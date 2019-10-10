@@ -30,6 +30,6 @@ resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 // Don't generate scaladoc for the "controller" and "router" packages
 scalacOptions in (Compile, doc) := List(
   "-skip-packages",  "controllers:router",
-  "-doc-source-url", "https://github.com/sun-opsys/Doppelauge/tree/master€{FILE_PATH}.scala"
+  "-doc-source-url", "https://github.com/kmatheussen/Doppelauge/tree/master€{FILE_PATH}.scala"
 )
 

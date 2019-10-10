@@ -17,7 +17,7 @@ class JsonParseException(message: String) extends JsonException(message)
   * Similar to Play Framework's "JsValue", but quicker to use for testing and parsing.
   * @note To convert a JsValue into a [[JValue]], use [[J.apply]].
   * @note To convert a [[JValue]] into a JsValue, use [[asJsValue]].
-  * @see [[https://github.com/sun-opsys/doppelauge/blob/master/test/JsonSpec.scala]] for examples
+  * @see [[https://github.com/kmatheussen/doppelauge/blob/master/test/JsonSpec.scala]] for examples
   */
 trait JValue {
 
@@ -515,7 +515,7 @@ object JNull extends JValue {
   * Similar to Play framework's "Json" object, but quicker to use for testing and parsing.
   * @note J is safer than Play framework's 'Json' object since it doesn't allow key clash when creating and merging objects.
   * @note J guarantees to maintain object field order. Play framework's 'Json' object does not.
-  * @see [[https://github.com/sun-opsys/doppelauge/blob/master/test/JsonSpec.scala]] for examples
+  * @see [[https://github.com/kmatheussen/doppelauge/blob/master/test/JsonSpec.scala]] for examples
   */
 object J {
 

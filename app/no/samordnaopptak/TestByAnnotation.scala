@@ -4,7 +4,7 @@ package no.samordnaopptak.test.TestByAnnotation
 /**
   * Do unit testing by annotation. These annotations also function as documentation.
   * 
-  * @see Almost all source files in [[https://github.com/sun-opsys/doppelauge/tree/master/app/no/samordnaopptak]] uses TestByAnnotation for unit tests
+  * @see Almost all source files in [[https://github.com/kmatheussen/doppelauge/tree/master/app/no/samordnaopptak]] uses TestByAnnotation for unit tests
   * 
   *  @example
   * {{{

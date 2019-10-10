@@ -59,7 +59,7 @@ class JsonChangerException(message: String, val path: String) extends Exception(
   )
   }}}
   * 
-  * @see [[https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala]] for more examples
+  * @see [[https://github.com/kmatheussen/doppelauge/blob/master/test/JsonChangerSpec.scala]] for more examples
   */
 object JsonChanger{
 
