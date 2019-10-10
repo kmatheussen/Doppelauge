@@ -56,7 +56,7 @@ When changing a json value with JsonChanger, it also pattern matches the <b>json
 should make bugs appear earlier than they would have been othervice.
 (You might argue that it would be better to first validate the json against a schema, but this way you get validation for free, plus that the validation schema maintains itself automatically.)</p><p>There are several custom changers such as <a href="JsonChanger$$___identity$.html" class="extype" name="no.samordnaopptak.json.JsonChanger.___identity">___identity</a>, <a href="JsonChanger$$Replace.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Replace">Replace</a>, <a href="JsonChanger$$Func.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Func">Func</a>, <a href="JsonChanger$$Map.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Map">Map</a>, <a href="JsonChanger$$MapChanger.html" class="extype" name="no.samordnaopptak.json.JsonChanger.MapChanger">MapChanger</a>, etc. See documentation below for examples.
 Custom changers can also be created from the outside by implementing the <a href="JsonChanger$$Changer.html" class="extype" name="no.samordnaopptak.json.JsonChanger.Changer">Changer</a> trait.</p><p>The pattern matcher in JsonChanger checks that: a) a json value doesn't change type (unless we tell it to),
-b) we don't add or remove fields to objects (unless we tell it to), c) we don't add or remove values to arrays (unless we tell it to).</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/sun-opsys/Doppelauge/tree/master/home/kjetil/Doppelauge/app/no/samordnaopptak/JsonChanger.scala" target="_blank">JsonChanger.scala</a></dd><div class="block">Example:
+b) we don't add or remove fields to objects (unless we tell it to), c) we don't add or remove values to arrays (unless we tell it to).</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/kmatheussen/Doppelauge/tree/master/home/kjetil/Doppelauge/app/no/samordnaopptak/JsonChanger.scala" target="_blank">JsonChanger.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre><span class="kw">val</span> json = J.obj(
   <span class="lit">"aaa"</span> -&gt; J.obj(
     <span class="lit">"a1"</span> -&gt; <span class="num">60</span>,
@@ -83,7 +83,7 @@ json - <span class="lit">"aaa"</span> ++ J.obj(
     )
   )
 )</pre></li></ol>
-            </div><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala" target="_blank">https://github.com/sun-opsys/doppelauge/blob/master/test/JsonChangerSpec.scala</a> for more examples</p></span></dd></dl><div class="toggleContainer block">
+            </div><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/kmatheussen/doppelauge/blob/master/test/JsonChangerSpec.scala" target="_blank">https://github.com/kmatheussen/doppelauge/blob/master/test/JsonChangerSpec.scala</a> for more examples</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
